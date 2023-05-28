@@ -23,42 +23,42 @@ contactsLink.addEventListener('click', function(event) {
 $(document).ready(function() {
     var events = [
       {
-        image: "concert.jpg",
+        image: "images/concert.jpg",
         title: "Zidane comes with a concert!",
         category: "Concert",
         date: "May 12, 2023",
         link: "reg.html"
       },
       {
-        image: "football.jpg",
+        image: "images/football.jpg",
         title: "Astana - Jetysu match",
         category: "Football",
         date: "May 19, 2023",
         link: "reg.html"
       },
       {
-        image: "play.jpg",
+        image: "images/play.jpg",
         title: "Master and Margarita play",
         category: "Theatre",
         date: "May 20, 2023",
         link: "reg.html"
       },
       {
-        image: "lotr.jpg",
+        image: "images/lotr.jpg",
         title: "Lord Of The Rings: 20 years anniversaty",
         category: "Cinema",
         date: "June 5, 2023",
         link: "reg.html"
       },
       {
-        image: "AI.jpg",
+        image: "images/AI.jpg",
         title: "Scientific conference: What future does AI have?",
         category: "Meetup",
         date: "June 10, 2023",
         link: "reg.html"
       },
       {
-        image: "mike.jpg",
+        image: "images/mike.jpg",
         title: "Mike Tyson make his debut!",
         category: "Box",
         date: "July 26, 2023",

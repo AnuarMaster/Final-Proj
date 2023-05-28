@@ -13,7 +13,7 @@ $(document).ready(function() {
     var teamMembers = [
       {
         name: "Askarov Anuar",
-        image: "master.jpg",
+        image: "images/master.jpg",
         telegram: "https://t.me/MasterAnuar",
         phone: "+77006973077",
         email: "datathink@gmail.com",
@@ -22,7 +22,7 @@ $(document).ready(function() {
       },
       {
         name: "Sigayev Madiyar",
-        image: "madiyar.jpg",
+        image: "images/madiyar.jpg",
         telegram: "https://t.me/JeuneEncore",
         phone: "+77083511974",
         email: "sigayevmadik@gmail.com",
@@ -31,7 +31,7 @@ $(document).ready(function() {
       },
       {
         name: "Serikbay Syrym",
-        image: "syrym.jpg",
+        image: "images/syrym.jpg",
         telegram: "https://t.me/Angarov2004",
         phone: "+77786056750",
         email: "syrymserikbay@gmail.com",
@@ -40,7 +40,7 @@ $(document).ready(function() {
       },
       {
         name: "Aitbai Amirzhan",
-        image: "amir.jpg",
+        image: "images/amir.jpg",
         telegram: "https://t.me/amir_Zhan04",
         phone: "+77083511974",
         email: "amirzhanbek@gmail.com",
@@ -70,7 +70,7 @@ $(document).ready(function() {
       sectionDiv.append(contactsHeading, iconsDiv);
   
   
-      var audio = $("<audio>").attr("id", member.audio).attr("src", "zdorovo.mp3").attr("type", "audio/mp3");
+      var audio = $("<audio>").attr("id", member.audio).attr("src", "audio/zdorovo.mp3").attr("type", "audio/mp3");
       var playButton = $("<a>").attr("href", "#").addClass("playButton").attr("data-audio", member.audio).append($("<i>").addClass("fas fa-microphone"));
   
       iconsDiv.append(telegramLink, phoneLink, emailLink, $("<br>"), audio, playButton);

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventHub</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">    
@@ -50,110 +51,10 @@
              <h1 class="display-4">Upcoming Events</h1>
           </div>
         </div>
-          <div class="row">
-     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-      <div class="card text-white card-has-bg click-col" style="background-image:url('concert.jpg');">
-             <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
-            <div class="card-img-overlay d-flex flex-column">
-             <div class="card-body">
-                <small class="card-meta mb-2">Concert</small>
-                <h4 class="card-title mt-0 "><a class="text-white" href="reg.html">Zidane comes with a concert!</a></h4>
-               <small><i class="far fa-clock"></i>May 12, 2023</small>
-              </div>
-              <div class="card-footer">
-               <div class="media">
-      <div class="media-body">
+        <div class="row" id="events-container"></div>
       </div>
-    </div>
-              </div>
-            </div>
-          </div></div>
-         <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><div class="card text-white card-has-bg click-col" style="background-image:url('football.jpg');">
-             <img class="card-img d-none" src="football.jpg" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
-            <div class="card-img-overlay d-flex flex-column">
-             <div class="card-body">
-                <small class="card-meta mb-2">Football</small>
-                <h4 class="card-title mt-0 "><a class="text-white" href="reg.html">Astana - Jetysu match</a></h4>
-               <small><i class="far fa-clock"></i>May 19, 2023</small>
-              </div>
-              <div class="card-footer">
-               <div class="media">
-      <div class="media-body">
-      </div>
-    </div>
-              </div>
-            </div>
-          </div></div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><div class="card text-white card-has-bg click-col" style="background-image:url('play.jpg');">
-             <img class="card-img d-none" src="play.jpg" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
-            <div class="card-img-overlay d-flex flex-column">
-             <div class="card-body">
-                <small class="card-meta mb-2">Theatre</small>
-                <h4 class="card-title mt-0 "><a class="text-white" href="reg.html">Master and Margarita play</a></h4>
-               <small><i class="far fa-clock"></i>May 20, 2023</small>
-              </div>
-              <div class="card-footer">
-               <div class="media">
-      <div class="media-body">
-      </div>
-    </div>
-              </div>
-            </div>
-          </div></div>
-       
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><div class="card text-white card-has-bg click-col" style="background-image:url('lotr.jpg');">
-             <img class="card-img d-none" src="lotr.jpg" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
-            <div class="card-img-overlay d-flex flex-column">
-             <div class="card-body">
-                <small class="card-meta mb-2">Cinema</small>
-                <h4 class="card-title mt-0 "><a class="text-white" href="reg.html">Lord Of The Rings: 20 years anniversaty</a></h4>
-               <small><i class="far fa-clock"></i>June 5, 2023</small>
-              </div>
-              <div class="card-footer">
-               <div class="media">
-      <div class="media-body">
-      </div>
-    </div>
-              </div>
-            </div>
-          </div></div>
-         <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><div class="card text-white card-has-bg click-col" style="background-image:url('AI.jpg');">
-             <img class="card-img d-none" src="AI" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
-            <div class="card-img-overlay d-flex flex-column">
-             <div class="card-body">
-                <small class="card-meta mb-2">Meetup</small>
-                <h4 class="card-title mt-0 "><a class="text-white" href="reg.html">Scientific conference: What future does AI have?</a></h4>
-               <small><i class="far fa-clock"></i>June 10, 2023</small>
-              </div>
-              <div class="card-footer">
-               <div class="media">
-      <div class="media-body">
-      </div>
-    </div>
-              </div>
-            </div>
-          </div></div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><div class="card text-white card-has-bg click-col" style="background-image:url('mike.jpg');">
-             <img class="card-img d-none" src="mike.jpg" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
-            <div class="card-img-overlay d-flex flex-column">
-             <div class="card-body">
-                <small class="card-meta mb-2">Box</small>
-                <h4 class="card-title mt-0 "><a class="text-white" href="reg.html">Mike Tyson make his debut!</a></h4>
-               <small><i class="far fa-clock"></i>July 26, 2023</small>
-              </div>
-              <div class="card-footer">
-               <div class="media">
-      <div class="media-body">
-      </div>
-    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-       
-    </div>
     </section>
+    
     
 
     <footer class="bg-dark py-4">
@@ -161,7 +62,7 @@
             <p>&copy; 2023 EventHub. All Rights Reserved.</p>
         </div>
     </footer>
-
+<script src="index.js"></script>
 </body>
 
 </html>

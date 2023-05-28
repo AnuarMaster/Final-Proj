@@ -1,0 +1,44 @@
+body{
+  background-image: url(contacts.jpg);
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+}
+
+.team{
+  font-family: 'Arial', sans-serif;
+font-weight: bolder;
+}
+
+.products{
+  background-color: rgba(13, 124, 221, 0.459);
+  font-family: 'Arial', sans-serif;
+  font-size:250%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.response{
+font-weight: bolder;
+font-size: 170%;
+}
+
+.about{
+  font-size: larger;
+  background-color:ra rgb(119, 117, 117);
+}
+
+.container {
+  font-family: 'Arial', sans-serif;
+  color:rgb(108, 179, 241);
+  margin: 80px;
+  padding: 50px;
+  position: center;
+  text-align: center;
+  background: radial-gradient(rgba(49, 94, 112, 0.7), rgb(55, 55, 55, 0.7));
+}
+
+.fa-microphone {
+  font-size: 35px;
+}

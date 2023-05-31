@@ -1,6 +1,7 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image:url(sanek.jpg);
+  background-image:url(map.jpg);
+  background-size:auto;
 }
 
 .form-section {

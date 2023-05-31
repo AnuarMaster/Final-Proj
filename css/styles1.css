@@ -1,6 +1,6 @@
 body{
-    font-family: Arial, sans-serif;
-    background-image:url(sanek.jpg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image:url(sanek.jpg);
 }
 
 .form-section {
@@ -73,3 +73,17 @@ body{
     width: 70%;
 }
 
+.events-section {
+  color: rgb(15, 253, 15);
+  font-weight: bolder;
+  font-size: larger;
+  padding: 15px;
+  background: radial-gradient(rgba(49, 94, 112, 0.7), rgb(55, 55, 55, 0.7));
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#events-header {
+  cursor: pointer;
+}

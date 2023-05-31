@@ -9,6 +9,10 @@ function removeMarker(marker) {
     map.removeLayer(marker); 
 }
 
+$("#events-header").click(function() {
+    $("#events-list").slideToggle();
+});
+
 map.on('click', function (e) {
     var lat = e.latlng.lat;
     var lng = e.latlng.lng;
@@ -26,7 +30,18 @@ map.on('click', function (e) {
         <button onclick="removeMarker(markers[${markers.length}])">Remove Event</button>
     `;
 
+    var marker = L.marker([lat, lng]).addTo(map);
+    var popupContent = `
+        <b>${name}</b><br>
+        Date: ${date}<br>
+        Type: ${type}<br>
+        <button onclick="removeMarker(markers[${markers.length}])">Remove Event</button>
+    `;
+
     marker.bindPopup(popupContent);
+
+    $("#events-list").append(`<li><b>${name}</b> - ${date} - ${type}</li>`);
 
     markers.push(marker); 
 });
+

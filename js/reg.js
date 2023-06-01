@@ -12,3 +12,19 @@ document.getElementById('registration-form').addEventListener('submit', function
 
     document.getElementById('registration-form').reset();
   });
+
+  const checkboxGroups = document.querySelectorAll('.checkbox-group');
+
+checkboxGroups.forEach(group => {
+  const checkboxes = group.querySelectorAll('input[type="checkbox"]');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('click', function() {
+      checkboxes.forEach(cb => {
+        if (cb !== this) {
+          cb.checked = false;
+        }
+      });
+    });
+  });
+});

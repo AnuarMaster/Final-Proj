@@ -4,7 +4,7 @@ $(document).ready(function() {
         image: "images/concert.jpg",
         title: "Zidane comes with a concert!",
         category: "Concert",
-        date: "May 12, 2023",
+        date: "August 12, 2023",
         link: "reg.html",
         price: 20
       },
@@ -12,7 +12,7 @@ $(document).ready(function() {
         image: "images/football.jpg",
         title: "Astana - Jetysu match",
         category: "Football",
-        date: "May 19, 2023",
+        date: "August 19, 2023",
         link: "reg.html",
         price: 20
       },
@@ -20,7 +20,7 @@ $(document).ready(function() {
         image: "images/play.jpg",
         title: "Master and Margarita play",
         category: "Theatre",
-        date: "May 20, 2023",
+        date: "August 20, 2023",
         link: "reg.html",
         price: 20
       },
@@ -28,7 +28,7 @@ $(document).ready(function() {
         image: "images/lotr.jpg",
         title: "Lord Of The Rings: 20 years anniversaty",
         category: "Cinema",
-        date: "June 5, 2023",
+        date: "July 5, 2023",
         link: "reg.html",
         price: 20
       },
@@ -36,7 +36,7 @@ $(document).ready(function() {
         image: "images/AI.jpg",
         title: "Scientific conference: What future does AI have?",
         category: "Meetup",
-        date: "June 10, 2023",
+        date: "July 10, 2023",
         link: "reg.html",
         price: 20
       },

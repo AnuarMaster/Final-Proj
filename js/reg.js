@@ -1,30 +1,13 @@
-document.getElementById('registration-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    var email = document.getElementById('email').value;
-    var name = document.getElementById('name').value;
-    var surname = document.getElementById('surname').value;
-    var password = document.getElementById('password').value;
+document.getElementById("registrationForm").addEventListener("submit", function(event){
+  event.preventDefault()
 
-    if (email === '' || name === '' || surname === '' || password === '') {
-      alert('Please fill in all fields.');
-      return;
-    }
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
 
-    document.getElementById('registration-form').reset();
-  });
+  console.log("Name: " + name);
+  console.log("Email: " + email);
+  console.log("Password: " + password);
 
-  const checkboxGroups = document.querySelectorAll('.checkbox-group');
-
-checkboxGroups.forEach(group => {
-  const checkboxes = group.querySelectorAll('input[type="checkbox"]');
-
-  checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('click', function() {
-      checkboxes.forEach(cb => {
-        if (cb !== this) {
-          cb.checked = false;
-        }
-      });
-    });
-  });
+  alert("Registration successful!");
 });
